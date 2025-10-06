@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Corpora em Português</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        .options label {
+            display: block;
+            margin: 6px 0;
+            cursor: pointer;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        #answerLink {
+            display: none;
+            margin-left: 15px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #1a73e8;
+        }
+        #answerLink:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz para testar os conhecimentos</h1>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div class="question">
+                <p>1. Situação de coleta: Qual estratégia faz mais sentido para montar um corpus representativo do português usado na área da saúde em Angola?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="0"> Reunir artigos acadêmicos de medicina publicados em revistas internacionais, mesmo que escritos em português por autores angolanos.</label>
+                    <label><input type="radio" name="q1" value="1"> Combinar relatórios de hospitais locais, notícias sobre saúde em veículos angolanos e teses/dissertações produzidas em universidades do país.</label>
+                    <label><input type="radio" name="q1" value="0"> Utilizar não mais que entrevistas gravadas de rádio e TV em que pacientes e médicos comentam sobre questões de saúde pública.</label>
+                </div>
+            </div>
+<hr>
+
+            <!-- Pergunta 2 -->
+            <div class="question">
+                <p>2. Quantos países de língua oficial portuguesa participam do projeto VOC?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="0"> 5 países.</label>
+                    <label><input type="radio" name="q2" value="1"> 8 países.</label>
+                    <label><input type="radio" name="q2" value="0"> 12 países.</label>
+                </div>
+            </div>
+<hr>
+
+            <!-- Pergunta 3 -->
+            <div class="question">
+                <p>3. O que caracteriza a fase inicial do projeto VOC?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="0"> A criação de um novo alfabeto exclusivo para a CPLP.</label>
+                    <label><input type="radio" name="q3" value="1"> A junção dos vocabulários oficiais de Portugal (VOP) e do Brasil (VOLP).</label>
+                    <label><input type="radio" name="q3" value="0"> A tradução automática do português para outras línguas.</label>
+                </div>
+            </div>
+<hr>
+
+            <!-- Pergunta 4 -->
+            <div class="question">
+                <p>4. Onde os usuários poderão acessar o Vocabulário Ortográfico Comum (VOC)?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="0"> Apenas em versão impressa distribuída pela CPLP.</label>
+                    <label><input type="radio" name="q4" value="1"> Em uma plataforma online gratuita de acesso livre.</label>
+                    <label><input type="radio" name="q4" value="0"> Exclusivamente em bibliotecas universitárias de Portugal e Brasil.</label>
+                </div>
+            </div>
+<hr>
+
+            <!-- Pergunta 5 -->
+            <div class="question">
+                <p>5. Representatividade: Um corpus equilibrado de português jurídico não deve ser composto por:</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="0"> Decisões judiciais de diferentes instâncias e regiões.</label>
+                    <label><input type="radio" name="q5" value="1"> 80% de contratos empresariais e só 20% de textos de leis e sentenças.</label>
+                    <label><input type="radio" name="q5" value="0"> Leis federais, estaduais e municipais em conjunto.</label>
+                </div>
+            </div>
+<hr>
+
+            <!-- Pergunta 6 -->
+            <div class="question">
+                <p>6. Diversidade: Para montar um corpus técnico de medicina, para que ele seja diverso, deve incluir:</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="0"> Artigos, manuais e relatórios apenas de cardiologia, já que é uma das áreas mais produtivas em publicações.</label>
+                    <label><input type="radio" name="q6" value="1"> Textos de várias áreas médicas, como pediatria, neurologia e cardiologia.</label>
+                    <label><input type="radio" name="q6" value="0"> Textos literários sobre sistemas de saúde da Comunidade dos Países de Língua Portuguesa.</label>
+                </div>
+            </div>
+<hr>
+
+            <!-- Pergunta 7 -->
+            <div class="question">
+                <p>7. Situação de coleta: Um grupo de alunos está incumbido de construir um corpus sobre o português usado em textos jornalísticos digitais dos mais variados veículos de mídia do Brasil. Eles coletaram 14.350 matérias de cada jornal a seguir: Brasil 247; Diário do Centro do Mundo; O Antagonista. Somando cerca de 2.870.000 palavras.
+                <br>   Quais são os problemas do corpus jornalístico descrito?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="0"> O corpus é grande demais para o escopo do projeto.</label>
+                    <label><input type="radio" name="q7" value="1"> O corpus é enviesado, pois contempla apenas três veículos de comunicação com posicionamentos editoriais específicos, o que compromete a representatividade.</label>
+                    <label><input type="radio" name="q7" value="0"> O corpus está mal dimensionado, já que o número de textos por veículo deveria variar de acordo com a popularidade de cada jornal.</label>
+                </div>
+            </div>
+<hr>
+
+            <!-- Pergunta 8 -->
+            <div class="question">
+                <p>8. Preparação e processamento: Qual ação não faz parte do processo de preparo dos corpora?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="0"> Limpeza dos textos e anotação de proveniência.</label>
+                    <label><input type="radio" name="q8" value="0"> Tokenização, lematização e etiquetagem.</label>
+                    <label><input type="radio" name="q8" value="1"> Remoção de símbolos não alfabéticos que atrapalhem a análise da adaptação da linguagem.</label>
+                </div>
+            </div>
+<hr>
+
+            <!-- Pergunta 9 -->
+            <div class="question">
+                <p>9. Estrutura de subcorpora: Por que os subcorpora do VOC foram divididos em áreas como literário, jornalístico, legislativo e técnico?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="0"> Para que cada país pudesse escolher apenas um gênero textual e aprofundar nesse tipo.</label>
+                    <label><input type="radio" name="q9" value="1"> Para garantir equilíbrio e representatividade entre diferentes usos da língua portuguesa.</label>
+                    <label><input type="radio" name="q9" value="0"> Para diminuir o trabalho de coleta, já que alguns gêneros são mais fáceis de acessar.</label>
+                </div>
+            </div>
+<hr>
+
+            <!-- Pergunta 10 -->
+            <div class="question">
+                <p>10. Papel do corpus no VOC: Além de atualizar a lexicografia, o uso de corpora no VOC permite:</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="1"> Identificar variações não uniformizadas, como diferenças na aplicação da reforma ortográfica.</label>
+                    <label><input type="radio" name="q10" value="0"> Criar neologismos padronizados para substituir palavras antigas em todas as variedades do português.</label>
+                    <label><input type="radio" name="q10" value="0"> Eliminar a necessidade de consultar dicionários tradicionais.</label>
+                </div>
+            </div>
+<hr>
+
+            <button type="button" onclick="checkAnswers()">Verificar respostas</button>
+        </form>
+
+        <div class="result" id="result"></div>
+        <a id="answerLink" href="respostas.docx" target="_blank">📄 Ver arquivo de respostas (.docx)</a>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            let score = 0;
+            const totalQuestions = 10;
+            const form = document.forms['quizForm'];
+            for (let i = 1; i <= totalQuestions; i++) {
+                const answer = form['q'+i].value;
+                if (answer === "1") {
+                    score++;
+                }
+            }
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = `Você acertou ${score} de ${totalQuestions} perguntas.`;
+
+            // Exibe o link após o clique
+            const link = document.getElementById('answerLink');
+            link.style.display = 'inline';
+        }
+    </script>
+</body>
+</html>
